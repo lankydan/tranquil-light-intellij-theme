@@ -3,15 +3,15 @@
     <option name="ADDED_LINES_COLOR" value="50fa7b" />
     <option name="ANNOTATIONS_COLOR" value="282a35" />
     <option name="CARET_COLOR" value="cccccc" />
-    <option name="CARET_ROW_COLOR" value="44475a" />
-    <option name="CONSOLE_BACKGROUND_KEY" value="282a36" />
+    <option name="CARET_ROW_COLOR" value="292D3E" />
+    <option name="CONSOLE_BACKGROUND_KEY" value="292D3E" />
     <option name="DELETED_LINES_COLOR" value="ff5554" />
     <option name="DOC_COMMENT_LINK" value="ff79c6" />
     <option name="FILESTATUS_ADDED" value="50fa7b" />
     <option name="FILESTATUS_COPIED" value="50fa7b" />
-    <option name="FILESTATUS_DELETED" value="6272a4" />
-    <option name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value="6272a4" />
-    <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="6272a4" />
+    <option name="FILESTATUS_DELETED" value="7e57c2cc" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value="7e57c2cc" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="7e57c2cc" />
     <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_BOTH_CONFLICTS" value="ff5555" />
     <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_CONFLICTS" value="ff5555" />
     <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_PROPERTY_CONFLICTS" value="ff5555" />
@@ -104,12 +104,12 @@
     <option name="BREADCRUMBS_HOVERED">
       <value>
         <option name="FOREGROUND" value="ff79c6" />
-        <option name="BACKGROUND" value="282a36" />
+        <option name="BACKGROUND" value="292D3E" />
       </value>
     </option>
     <option name="BREADCRUMBS_INACTIVE">
       <value>
-        <option name="FOREGROUND" value="f8f8f2" />
+        <option name="FOREGROUND" value="ffffffcc" />
       </value>
     </option>
     <option name="BUILDOUT.KEY">
@@ -154,7 +154,7 @@
     </option>
     <option name="CONSOLE_DARKGRAY_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="6272a4" />
+        <option name="FOREGROUND" value="7e57c2cc" />
       </value>
     </option>
     <option name="CONSOLE_ERROR_OUTPUT">
@@ -189,7 +189,7 @@
     </option>
     <option name="CONSOLE_NORMAL_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="f8f8f2" />
+        <option name="FOREGROUND" value="ffffffcc" />
       </value>
     </option>
     <option name="CONSOLE_RANGE_TO_EXECUTE">
@@ -220,7 +220,7 @@
     </option>
     <option name="CONSOLE_WHITE_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="f8f8f2" />
+        <option name="FOREGROUND" value="ffffffcc" />
       </value>
     </option>
     <option name="CONSOLE_YELLOW_BRIGHT_OUTPUT">
@@ -332,7 +332,7 @@
     </option>
     <option name="DEFAULT_BLOCK_COMMENT">
       <value>
-        <option name="FOREGROUND" value="6272a4" />
+        <option name="FOREGROUND" value="7e57c2cc" />
       </value>
     </option>
     <option name="DEFAULT_CLASS_NAME">
@@ -356,7 +356,7 @@
     </option>
     <option name="DEFAULT_DOC_COMMENT">
       <value>
-        <option name="FOREGROUND" value="6272a4" />
+        <option name="FOREGROUND" value="7e57c2cc" />
       </value>
     </option>
     <option name="DEFAULT_DOC_COMMENT_TAG">
@@ -432,12 +432,12 @@
     </option>
     <option name="DEFAULT_LABEL">
       <value>
-        <option name="FOREGROUND" value="6272a4" />
+        <option name="FOREGROUND" value="7e57c2cc" />
       </value>
     </option>
     <option name="DEFAULT_LINE_COMMENT">
       <value>
-        <option name="FOREGROUND" value="6272a4" />
+        <option name="FOREGROUND" value="7e57c2cc" />
       </value>
     </option>
     <option name="DEFAULT_LOCAL_VARIABLE">
@@ -509,7 +509,7 @@
     </option>
     <option name="DELETED_TEXT_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="f8f8f2" />
+        <option name="FOREGROUND" value="ffffffcc" />
         <option name="BACKGROUND" value="933232" />
         <option name="EFFECT_COLOR" value="c3c3c3" />
         <option name="EFFECT_TYPE" value="3" />
@@ -593,8 +593,8 @@
     </option>
     <option name="GO_COLON">
       <value>
-        <option name="FOREGROUND" value="f8f8f2" />
-        <option name="BACKGROUND" value="282a36" />
+        <option name="FOREGROUND" value="ffffffcc" />
+        <option name="BACKGROUND" value="292D3E" />
         <option name="EFFECT_TYPE" value="5" />
       </value>
     </option>
@@ -737,7 +737,7 @@
     </option>
     <option name="GO_SHADOWING_VARIABLE">
       <value>
-        <option name="FOREGROUND" value="f8f8f2" />
+        <option name="FOREGROUND" value="ffffffcc" />
       </value>
     </option>
     <option name="GO_STRING">
@@ -804,8 +804,8 @@
     <option name="HAML_RUBY_CODE" baseAttributes="INJECTED_LANGUAGE_FRAGMENT" />
     <option name="HAML_TAG">
       <value>
-        <option name="FOREGROUND" value="f8f8f2" />
-        <option name="BACKGROUND" value="282a36" />
+        <option name="FOREGROUND" value="ffffffcc" />
+        <option name="BACKGROUND" value="292D3E" />
         <option name="EFFECT_TYPE" value="5" />
       </value>
     </option>
@@ -949,7 +949,7 @@
     </option>
     <option name="JSP_SCRIPTING_BACKGROUND">
       <value>
-        <option name="FOREGROUND" value="f8f8f2" />
+        <option name="FOREGROUND" value="ffffffcc" />
         <option name="BACKGROUND" value="242632" />
       </value>
     </option>
@@ -986,7 +986,7 @@
     </option>
     <option name="KOTLIN_LABEL">
       <value>
-        <option name="FOREGROUND" value="6272a4" />
+        <option name="FOREGROUND" value="7e57c2cc" />
       </value>
     </option>
     <option name="KOTLIN_MUTABLE_VARIABLE">
@@ -996,7 +996,7 @@
     </option>
     <option name="KOTLIN_NAMED_ARGUMENT">
       <value>
-        <option name="FOREGROUND" value="6272a4" />
+        <option name="FOREGROUND" value="7e57c2cc" />
       </value>
     </option>
     <option name="KOTLIN_PACKAGE_FUNCTION_CALL" baseAttributes="DEFAULT_STATIC_METHOD" />
@@ -1091,7 +1091,7 @@
     </option>
     <option name="OC.CONDITIONALLY_NOT_COMPILED">
       <value>
-        <option name="FOREGROUND" value="6272a4" />
+        <option name="FOREGROUND" value="7e57c2cc" />
       </value>
     </option>
     <option name="OC.DIRECTIVE">
@@ -1101,7 +1101,7 @@
     </option>
     <option name="OC.LABEL">
       <value>
-        <option name="FOREGROUND" value="6272a4" />
+        <option name="FOREGROUND" value="7e57c2cc" />
         <option name="EFFECT_TYPE" value="5" />
       </value>
     </option>
@@ -1112,7 +1112,7 @@
     </option>
     <option name="OC.MACRO_PARAMETER">
       <value>
-        <option name="FOREGROUND" value="f8f8f2" />
+        <option name="FOREGROUND" value="ffffffcc" />
       </value>
     </option>
     <option name="OC.MESSAGE_ARGUMENT">
@@ -1229,7 +1229,7 @@
     </option>
     <option name="PY.DOC_COMMENT">
       <value>
-        <option name="FOREGROUND" value="6272a4" />
+        <option name="FOREGROUND" value="7e57c2cc" />
       </value>
     </option>
     <option name="PY.DOC_COMMENT_TAG">
@@ -1263,12 +1263,12 @@
     </option>
     <option name="PY.KEYWORD_ARGUMENT">
       <value>
-        <option name="FOREGROUND" value="6272a4" />
+        <option name="FOREGROUND" value="7e57c2cc" />
       </value>
     </option>
     <option name="PY.LINE_COMMENT">
       <value>
-        <option name="FOREGROUND" value="6272a4" />
+        <option name="FOREGROUND" value="7e57c2cc" />
       </value>
     </option>
     <option name="PY.METHOD_CALL">
@@ -1324,7 +1324,7 @@
     </option>
     <option name="QL_PARAMETER">
       <value>
-        <option name="FOREGROUND" value="f8f8f2" />
+        <option name="FOREGROUND" value="ffffffcc" />
       </value>
     </option>
     <option name="RAINBOW_COLOR0">
@@ -1374,12 +1374,12 @@
     </option>
     <option name="REGEXP.ESC_CHARACTER">
       <value>
-        <option name="FOREGROUND" value="f8f8f2" />
+        <option name="FOREGROUND" value="ffffffcc" />
       </value>
     </option>
     <option name="REGEXP.INVALID_STRING_ESCAPE">
       <value>
-        <option name="FOREGROUND" value="f8f8f2" />
+        <option name="FOREGROUND" value="ffffffcc" />
         <option name="EFFECT_COLOR" value="ff5555" />
         <option name="EFFECT_TYPE" value="2" />
       </value>
@@ -1391,7 +1391,7 @@
     </option>
     <option name="REGEXP.PARENTHS">
       <value>
-        <option name="FOREGROUND" value="f8f8f2" />
+        <option name="FOREGROUND" value="ffffffcc" />
       </value>
     </option>
     <option name="REGEXP.QUOTE_CHARACTER">
@@ -1447,13 +1447,13 @@
     </option>
     <option name="RUBY_HASH_ASSOC">
       <value>
-        <option name="FOREGROUND" value="f8f8f2" />
+        <option name="FOREGROUND" value="ffffffcc" />
       </value>
     </option>
     <option name="RUBY_HEREDOC_CONTENT">
       <value>
         <option name="FOREGROUND" value="f1fa8c" />
-        <option name="BACKGROUND" value="282a36" />
+        <option name="BACKGROUND" value="292D3E" />
         <option name="EFFECT_TYPE" value="5" />
       </value>
     </option>
@@ -1633,8 +1633,8 @@
     <option name="TAPESTRY_COMPONENT_TAG" baseAttributes="" />
     <option name="TEXT">
       <value>
-        <option name="FOREGROUND" value="f8f8f2" />
-        <option name="BACKGROUND" value="282a36" />
+        <option name="FOREGROUND" value="ffffffcc" />
+        <option name="BACKGROUND" value="292D3E" />
         <option name="EFFECT_TYPE" value="5" />
       </value>
     </option>
@@ -1647,7 +1647,7 @@
     </option>
     <option name="TODO_DEFAULT_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="6272a4" />
+        <option name="FOREGROUND" value="7e57c2cc" />
         <option name="ERROR_STRIPE_COLOR" value="977ab" />
       </value>
     </option>
@@ -1693,7 +1693,7 @@
     </option>
     <option name="VELOCITY_SCRIPTING_BACKGROUND">
       <value>
-        <option name="FOREGROUND" value="f8f8f2" />
+        <option name="FOREGROUND" value="ffffffcc" />
         <option name="BACKGROUND" value="242632" />
       </value>
     </option>
@@ -1711,7 +1711,7 @@
     </option>
     <option name="WRITE_IDENTIFIER_UNDER_CARET_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="44475a" />
+        <option name="BACKGROUND" value="292D3E" />
         <option name="ERROR_STRIPE_COLOR" value="bd93f9" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
@@ -1768,21 +1768,21 @@
     <option name="YAML_SCALAR_LIST">
       <value>
         <option name="FOREGROUND" value="50fa7b" />
-        <option name="BACKGROUND" value="282a36" />
+        <option name="BACKGROUND" value="292D3E" />
         <option name="EFFECT_TYPE" value="5" />
       </value>
     </option>
     <option name="YAML_SCALAR_VALUE">
       <value>
         <option name="FOREGROUND" value="50fa7b" />
-        <option name="BACKGROUND" value="282a36" />
+        <option name="BACKGROUND" value="292D3E" />
         <option name="EFFECT_TYPE" value="5" />
       </value>
     </option>
     <option name="YAML_TEXT">
       <value>
         <option name="FOREGROUND" value="bd93f9" />
-        <option name="BACKGROUND" value="282a36" />
+        <option name="BACKGROUND" value="292D3E" />
         <option name="EFFECT_TYPE" value="5" />
       </value>
     </option>
