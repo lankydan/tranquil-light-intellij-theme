@@ -763,7 +763,7 @@
     },
     "Tree": {
       "background": "#292D3E",
-      "foreground": "#c792ea",
+      "foreground": "#959dcb",
       "hash": "#2b2a3e",
       "modifiedItemForeground": "#ab47bc",
       "selectionBackground": "#676E9550",
