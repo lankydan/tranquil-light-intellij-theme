@@ -1,7 +1,7 @@
 package com.github.lankydan.palenightintellijtheme.services
 
-import com.intellij.openapi.project.Project
 import com.github.lankydan.palenightintellijtheme.MyBundle
+import com.intellij.openapi.project.Project
 
 class MyProjectService(project: Project) {
 

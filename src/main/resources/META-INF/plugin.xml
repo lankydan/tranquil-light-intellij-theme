@@ -1,6 +1,6 @@
 <idea-plugin>
-    <id>com.github.lankydan.palenightintellijtheme</id>
-    <name>palenight-intellij-theme</name>
+    <id>dev.lankydan.palenightintellijtheme</id>
+    <name>Palenight</name>
     <vendor>lankydan</vendor>
 
     <!-- Product and plugin compatibility requirements -->
@@ -8,12 +8,6 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.lankydan.palenightintellijtheme.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.lankydan.palenightintellijtheme.services.MyProjectService"/>
+        <themeProvider id="e7a2a42c-3744-11eb-adc1-0242ac120002" path="/themes/palenight-theme.json"/>
     </extensions>
-
-    <applicationListeners>
-        <listener class="com.github.lankydan.palenightintellijtheme.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
-    </applicationListeners>
 </idea-plugin>
