@@ -327,7 +327,6 @@
       "acceleratorForeground": "#676E95",
       "acceleratorSelectionForeground": "#FFFFFF",
       "background": "#292D3E",
-      "border": "4,2,4,2",
       "borderColor": "#34324a",
       "disabledBackground": "#34324a",
       "disabledForeground": "#515772",
@@ -350,7 +349,6 @@
     "MenuItem": {
       "acceleratorForeground": "#676E95",
       "acceleratorSelectionForeground": "#FFFFFF",
-      "border": "4,2,4,2",
       "background": "#292D3E",
       "disabledBackground": "#292D3E",
       "disabledForeground": "#515772",
