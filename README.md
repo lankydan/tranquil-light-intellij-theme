@@ -1,8 +1,8 @@
 # palenight-intellij-theme
 
 ![Build](https://github.com/lankydan/palenight-intellij-theme/workflows/Build/badge.svg)
-[![Version](https://img.shields.io/jetbrains/plugin/v/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
+[![Version](https://img.shields.io/jetbrains/plugin/v/15515-palenight.svg)](https://plugins.jetbrains.com/plugin/15515-palenight)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/15515-palenight.svg)](https://plugins.jetbrains.com/plugin/15515-palenight)
 
 <!-- Plugin description -->
 This is an alteration on the Material Palenight theme, that brightens up some of the colours to increase readability.
