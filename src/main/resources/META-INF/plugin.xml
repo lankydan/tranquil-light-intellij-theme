@@ -1,6 +1,6 @@
 <idea-plugin>
-    <id>dev.lankydan.palenightintellijtheme</id>
-    <name>Palenight</name>
+    <id>dev.lankydan.mysteryintellijtheme</id>
+    <name>mystery</name>
     <vendor>lankydan</vendor>
 
     <!-- Product and plugin compatibility requirements -->
@@ -8,6 +8,6 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <themeProvider id="e7a2a42c-3744-11eb-adc1-0242ac120002" path="/themes/palenight-theme.json"/>
+        <themeProvider id="e7a2a42c-3744-11eb-adc1-0242ac120002" path="/themes/mystery-theme.json"/>
     </extensions>
 </idea-plugin>

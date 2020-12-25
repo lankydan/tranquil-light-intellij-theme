@@ -1,8 +1,8 @@
 {
-  "name": "Palenight",
+  "name": "mystery",
   "dark": true,
   "author": "Dan Newton",
-  "editorScheme": "/themes/palenight.xml",
+  "editorScheme": "/themes/mystery.xml",
   "ui": {
     "*": {
       "acceleratorSelectionForeground": "#676E95",

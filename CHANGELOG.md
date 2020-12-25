@@ -1,6 +1,6 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 
-# palenight-intellij-theme Changelog
+# mystery-intellij-theme Changelog
 
 ## [Unreleased]
 ### Added
