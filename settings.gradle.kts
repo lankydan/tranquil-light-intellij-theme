@@ -1,1 +1,1 @@
-rootProject.name = "palenight-intellij-theme"
+rootProject.name = "tranquil-light-intellij-theme"

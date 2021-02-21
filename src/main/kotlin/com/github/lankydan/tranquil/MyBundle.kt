@@ -1,4 +1,4 @@
-package com.github.lankydan.palenightintellijtheme
+package com.github.lankydan.tranquil
 
 import com.intellij.AbstractBundle
 import org.jetbrains.annotations.NonNls

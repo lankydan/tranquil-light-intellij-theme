@@ -1,0 +1,929 @@
+{
+  "name": "Tranquil Light",
+  "dark": false,
+  "author": "Dan Newton",
+  "editorScheme": "/themes/tranquil-light.xml",
+  "colors": {
+    "backgroundLight": "#f3f3f3",
+    "backgroundDark": "#eaeaea",
+    "fadedPink": "#e9e8f3",
+    "fadedPinkDark": "#e2e1f0",
+    "grey": "#d6d4d4",
+    "greyDark": "#616161",
+    "grey70%": "#55555570",
+    "textBlack": "#383738",
+    "textGrey": "#3e3e4e",
+    "primaryPurple": "#790e8b",
+    "primaryPurpleLight": "#ab47bc",
+    "fadedYellow": "#ede8ca",
+    "yellow": "#DAAA01",
+    "lilac": "#BAA8FF",
+    "fadedRed": "#f07178"
+  },
+  "ui": {
+    "*": {
+      "acceleratorSelectionForeground": "greyDark",
+      "background": "backgroundLight",
+      "borderColor": "backgroundLight",
+      "disabledBackground": "fadedYellow",
+      "disabledForeground": "greyDark",
+      "disabledText": "greyDark",
+      "focusColor": "fadedPink",
+      "focusedBorderColor": "primaryPurple",
+      "foreground": "textGrey",
+      "inactiveBackground": "fadedYellow",
+      "inactiveForeground": "greyDark",
+      "infoForeground": "greyDark",
+      "selectionBackground": "fadedPink",
+      "selectionBackgroundInactive": "backgroundDark",
+      "selectionForeground": "primaryPurple",
+      "selectionInactiveBackground": "backgroundDark",
+      "separatorColor": "backgroundLight"
+    },
+    "activeCaption": "backgroundLight",
+    "ActionButton": {
+      "hoverBackground": "fadedPink",
+      "hoverBorderColor": "primaryPurpleLight",
+      "hoverSeparatorColor": "backgroundDark",
+      "focusedBorderColor": "primaryPurpleLight",
+      "pressedBackground": "fadedPink",
+      "pressedBorderColor": "primaryPurpleLight"
+    },
+    "Autocomplete": {
+      "selectionBackground": "fadedPink"
+    },
+    "Borders.ContrastBorderColor": "backgroundLight",
+    "Borders.color": "backgroundLight",
+    "Button": {
+      "arc": 0,
+      "background": "backgroundLight",
+      "default": {
+        "endBackground": "fadedPink",
+        "endBorderColor": "fadedPink",
+        "foreground": "primaryPurple",
+        "focusColor": "fadedPink",
+        "focusedBorderColor": "primaryPurple",
+        "shadowColor": "fadedPink",
+        "startBackground": "fadedPink",
+        "startBorderColor": "fadedPink"
+      },
+      "disabledBorderColor": "backgroundDark",
+      "disabledText": "greyDark",
+      "endBackground": "backgroundDark",
+      "endBorderColor": "backgroundDark",
+      "focus": "fadedPink",
+      "focusedBorderColor": "primaryPurple",
+      "foreground": "primaryPurple",
+      "highlight": "primaryPurple",
+      "mt.background": "backgroundDark",
+      "mt.foreground": "greyDark",
+      "mt.selectedForeground": "primaryPurple",
+      "mt.selection.color1": "fadedPink",
+      "mt.selection.color2": "fadedPink",
+      "startBackground": "backgroundDark",
+      "startBorderColor": "backgroundDark",
+      "shadowColor": "backgroundDark",
+      "shadowWidth": 0
+    },
+    "Canvas": {
+      "Tooltip.borderColor": "grey",
+      "Tooltip.background": "fadedPink"
+    },
+    "Content.background": "fadedPink",
+    "CheckBox": {
+      "background": "backgroundLight",
+      "disabledText": "greyDark",
+      "foreground": "textGrey",
+      "select": "primaryPurple"
+    },
+    "CheckBoxMenuItem": {
+      "acceleratorForeground": "greyDark",
+      "acceleratorSelectionForeground": "greyDark",
+      "background": "backgroundLight",
+      "disabledBackground": "backgroundLight",
+      "disabledForeground": "greyDark",
+      "foreground": "textGrey",
+      "selectionBackground": "fadedPink",
+      "selectionForeground": "primaryPurple"
+    },
+    "ColorChooser": {
+      "background": "backgroundLight",
+      "foreground": "textGrey",
+      "swatchesDefaultRecentColor": "textGrey"
+    },
+    "ComboBoxButton.background": "backgroundDark",
+    "ComboBox": {
+      "ArrowButton": {
+        "background": "backgroundDark",
+        "disabledIconColor": "greyDark",
+        "iconColor": "textGrey",
+        "nonEditableBackground": "backgroundLight"
+      },
+      "background": "backgroundLight",
+      "buttonBackground": "backgroundDark",
+      "disabledForeground": "greyDark",
+      "foreground": "textGrey",
+      "modifiedItemForeground": "primaryPurple",
+      "nonEditableBackground": "backgroundDark",
+      "padding": "5,5,5,5",
+      "selectionBackground": "fadedPink",
+      "selectionForeground": "primaryPurple"
+    },
+    "ComboPopup.border": "grey",
+    "CompletionPopup": {
+      "background": "backgroundDark",
+      "foreground": "textGrey",
+      "infoForeground": "greyDark",
+      "matchForeground": "primaryPurple",
+      "matchSelectionForeground": "primaryPurple",
+      "nonFocusedState": "false",
+      "selectedGrayedForeground": "primaryPurple",
+      "selectionGrayForeground": "primaryPurple",
+      "selectionInactiveInfoForeground": "greyDark",
+      "selectionInactiveBackground": "fadedPinkDark",
+      "selectionBackground": "fadedPinkDark",
+      "selectionForeground": "primaryPurple",
+      "selectionInfoForeground": "primaryPurple"
+    },
+    "Component": {
+      "arc": 4,
+      "borderColor": "backgroundLight",
+      "disabledBorderColor": "backgroundDark",
+      "focusColor": "primaryPurple",
+      "focusedBorderColor": "primaryPurple",
+      "hoverIconColor": "primaryPurple",
+      "infoForeground": "greyDark",
+      "iconColor": "textGrey"
+    },
+    "control": "backgroundLight",
+    "controlText": "greyDark",
+    "Counter": {
+      "background": "primaryPurple",
+      "foreground": "#ffffff"
+    },
+    "Debugger": {
+      "Variables": {
+        "collectingDataForeground": "greyDark",
+        "changedValueForeground": "primaryPurple",
+        "errorMessageForeground": "fadedRed",
+        "evaluatingExpressionForeground": "greyDark",
+        "exceptionForeground": "yellow",
+        "modifyingValueForeground": "primaryPurple",
+        "valueForeground": "primaryPurple"
+      }
+    },
+    "DebuggerTabs": {
+      "selectedBackground": "fadedPink",
+      "underlinedTabBackground": "fadedPink"
+    },
+    "DebuggerPopup": {
+      "borderColor": "backgroundLight"
+    },
+    "DefaultTabs": {
+      "background": "backgroundLight",
+      "borderColor": "backgroundLight",
+      "hoverBackground": "fadedPink",
+      "hoverColor": "backgroundLight",
+      "hoverMaskColor": "fadedPink",
+      "inactiveColoredFileBackground": "backgroundDark",
+      "inactiveUnderlineColor": "greyDark",
+      "inactiveMaskColor": "backgroundLight",
+      "underlineColor": "primaryPurple",
+      "underlinedTabBackground": "fadedPink"
+    },
+    "Desktop.background": "backgroundLight",
+    "DialogWrapper.southPanelBackground": "backgroundLight",
+    "DialogWrapper.southPanelDivider": "backgroundLight",
+    "DragAndDrop": {
+      "areaBackground": "backgroundLight",
+      "areaBorderColor": "backgroundLight",
+      "areaForeground": "textGrey"
+    },
+    "Editor": {
+      "background": "backgroundLight",
+      "foreground": "textGrey",
+      "shortcutForeground": "greyDark"
+    },
+    "EditorPane": {
+      "background": "backgroundLight",
+      "caretForeground": "primaryPurple",
+      "foreground": "textGrey",
+      "inactiveBackground": "backgroundLight",
+      "inactiveForeground": "greyDark",
+      "selectionBackground": "fadedPink",
+      "selectionForeground": "primaryPurple"
+    },
+    "EditorTabs": {
+      "borderColor": "backgroundLight",
+      "hoverColor": "fadedPink",
+      "hoverMaskColor": "fadedPink",
+      "inactiveMaskColor": "backgroundLight",
+      "inactiveColoredFileBackground": "backgroundLight2",
+      "inactiveUnderlineColor": "greyDark",
+      "selectedForeground": "textGrey",
+      "selectedBackground": "fadedPink",
+      "underlineColor": "primaryPurple",
+      "underlinedTabBackground": "fadedPink"
+    },
+    "EditorGroupsTabs": {
+      "background": "backgroundLight",
+      "borderColor": "backgroundLight",
+      "hoverBackground": "fadedPink",
+      "hoverColor": "fadedPink",
+      "inactiveUnderlineColor": "primaryPurple",
+      "underlineColor": "primaryPurple",
+      "underlinedTabBackground": "fadedPink",
+      "underlinedTabForeground": "textGrey"
+    },
+    "FileColor": {
+      "Green": "#dbe5c9",
+      "Blue": "#D9EBF9",
+      "Yellow": "fadedYellow",
+      "Orange": "#e3ceba",
+      "Violet": "#e5d5e8",
+      "Rose": "#FAD5D0"
+    },
+    "FlameGraph": {
+      "JVMBackground": "#89DDF7",
+      "JVMFocusBackground": "#82AAFF",
+      "JVMSearchNotMatchedBackground": "#FF5370",
+      "JVMFocusSearchNotMatchedBackground": "#AB7967",
+      "nativeBackground": "yellow",
+      "nativeFocusBackground": "#F78C6C",
+      "nativeSearchNotMatchedBackground": "#C792EA",
+      "nativeFocusSearchNotMatchedBackground": "#BB80B3"
+    },
+    "Focus.color": "fadedPinkDark",
+    "FormattedTextField": {
+      "background": "backgroundLight",
+      "caretForeground": "primaryPurple",
+      "foreground": "textGrey",
+      "inactiveBackground": "backgroundDark",
+      "inactiveForeground": "greyDark",
+      "selectionForeground": "primaryPurple",
+      "selectionBackground": "fadedPink"
+    },
+    "Group": {
+      "disabledSeparatorColor": "grey",
+      "separatorColor": "grey"
+    },
+    "GutterTooltip": {
+      "infoForeground": "textGrey",
+      "lineSeparatorColor": "backgroundLight"
+    },
+    "HeaderColor": {
+      "active": "backgroundLight",
+      "inactive": "fadedPink"
+    },
+    "HelpTooltip": {
+      "background": "backgroundLight",
+      "borderColor": "backgroundLight",
+      "foreground": "textGrey",
+      "infoForeground": "greyDark",
+      "shortcutForeground": "greyDark"
+    },
+    "Hyperlink.linkColor": "primaryPurple",
+    "inactiveCaption": "backgroundDark",
+    "inactiveCaptionBorder": "backgroundLight",
+    "inactiveCaptionText": "greyDark",
+    "info": "greyDark",
+    "infoText": "greyDark",
+    "IdeStatusBar.border": "4,4,4,4",
+    "InformationHint.borderColor": "grey",
+    "InplaceRefactoringPopup": {
+      "borderColor": "backgroundLight"
+    },
+    "InternalFrame": {
+      "activeTitleForeground": "textGrey",
+      "background": "backgroundLight",
+      "inactiveTitleForeground": "greyDark"
+    },
+    "Label": {
+      "background": "backgroundLight",
+      "disabledForeground": "greyDark",
+      "disabledShadow": "backgroundLight",
+      "disabledText": "greyDark",
+      "foreground": "textGrey",
+      "infoForeground": "greyDark",
+      "selectedForeground": "primaryPurple"
+    },
+    "Link": {
+      "activeForeground": "primaryPurple",
+      "hoverForeground": "primaryPurple",
+      "pressedForeground": "primaryPurple",
+      "secondaryForeground": "greyDark",
+      "visitedForeground": "primaryPurple"
+    },
+    "link.foreground": "primaryPurple",
+    "List": {
+      "background": "backgroundDark",
+      "foreground": "textGrey",
+      "selectionBackground": "fadedPinkDark",
+      "selectionForeground": "primaryPurple",
+      "selectionInactiveForeground": "primaryPurple",
+      "selectionInactiveBackground": "fadedPinkDark"
+    },
+    "material": {
+      "background": "backgroundLight",
+      "branchColor": "textGrey",
+      "contrast": "fadedPink",
+      "foreground": "textGrey",
+      "mergeCommits": "backgroundDark",
+      "primaryColor": "greyDark",
+      "selectionForeground": "primaryPurple",
+      "tab.backgroundColor": "backgroundLight",
+      "tab.borderColor": "primaryPurple",
+      "tagColor": "greyDark"
+    },
+    "MemoryIndicator": {
+      "allocatedBackground": "backgroundDark",
+      "usedColor": "fadedPink",
+      "usedBackground": "fadedPink"
+    },
+    "Menu": {
+      "acceleratorForeground": "greyDark",
+      "acceleratorSelectionForeground": "primaryPurple",
+      "background": "backgroundLight",
+      "borderColor": "backgroundLight",
+      "disabledBackground": "backgroundDark",
+      "disabledForeground": "greyDark",
+      "foreground": "textGrey",
+      "selectionBackground": "fadedPink",
+      "selectionForeground": "primaryPurple",
+      "separatorColor": "grey"
+    },
+    "MenuBar": {
+      "background": "backgroundLight",
+      "borderColor": "backgroundLight",
+      "disabledBackground": "backgroundLight",
+      "disabledForeground": "greyDark",
+      "foreground": "textGrey",
+      "highlight": "backgroundLight",
+      "selectionBackground": "fadedPink",
+      "selectionForeground": "primaryPurple",
+      "shadow": "backgroundLight"
+    },
+    "MenuItem": {
+      "acceleratorForeground": "greyDark",
+      "acceleratorSelectionForeground": "primaryPurple",
+      "background": "backgroundLight",
+      "disabledBackground": "backgroundLight",
+      "disabledForeground": "greyDark",
+      "foreground": "textGrey",
+      "selectionBackground": "fadedPink",
+      "selectionForeground": "primaryPurple"
+    },
+    "NavBar": {
+      "arrowColor": "textGrey",
+      "borderColor": "backgroundLight"
+    },
+    "NewClass": {
+      "Panel": {
+        "background": "backgroundLight"
+      },
+      "SearchField": {
+        "background": "backgroundLight"
+      }
+    },
+    "NewPSD.warning": "primaryPurple",
+    "Notification": {
+      "background": "fadedPink",
+      "borderColor": "backgroundLight",
+      "errorBackground": "fadedPink",
+      "errorBorderColor": "fadedPink",
+      "foreground": "textGrey",
+      "MoreButton": {
+        "background": "backgroundDark",
+        "foreground": "textGrey",
+        "innerBorderColor": "backgroundDark"
+      },
+      "ToolWindow": {
+        "errorBackground": "fadedPink",
+        "errorBorderColor": "fadedPink",
+        "informativeBackground": "fadedPink",
+        "informativeBorderColor": "fadedPink",
+        "warningBackground": "fadedPink",
+        "warningBorderColor": "fadedPink"
+      }
+    },
+    "OnePixelDivider.background": "grey",
+    "OptionPane": {
+      "background": "backgroundLight",
+      "foreground": "textGrey",
+      "messageForeground": "textGrey"
+    },
+    "Outline": {
+      "color": "backgroundDark",
+      "focusedColor": "primaryPurple",
+      "disabledColor": "greyDark"
+    },
+    "Panel": {
+      "background": "backgroundLight",
+      "foreground": "textGrey"
+    },
+    "ParameterInfo": {
+      "background": "backgroundDark",
+      "borderColor": "fadedPink",
+      "currentOverloadBackground": "fadedPink",
+      "currentParameterForeground": "primaryPurple",
+      "disabledForeground": "greyDark",
+      "foreground": "textGrey",
+      "infoForeground": "greyDark",
+      "lineSeparatorColor": "fadedPink"
+    },
+    "PasswordField": {
+      "background": "backgroundLight",
+      "capsLockIconColor": "primaryPurple",
+      "caretForeground": "primaryPurple",
+      "foreground": "textGrey",
+      "inactiveForeground": "greyDark",
+      "selectionBackground": "fadedPink",
+      "selectionForeground": "primaryPurple"
+    },
+    "Plugins": {
+      "background": "backgroundLight",
+      "disabledForeground": "greyDark",
+      "eapTagBackground": "fadedPink",
+      "lightSelectionBackground": "fadedPink",
+      "paidTagBackground": "fadedPink",
+      "selectionBackground": "fadedPink",
+      "tagForeground": "primaryPurple",
+      "tagBackground": "fadedPink",
+      "trialTagBackground": "fadedPink",
+      "Button": {
+        "installBackground": "backgroundDark",
+        "installBorderColor": "backgroundDark",
+        "installForeground": "textGrey",
+        "installFocusedBackground": "fadedPink",
+        "installFillForeground": "greyDark",
+        "installFillBackground": "backgroundDark",
+        "updateBackground": "backgroundDark",
+        "updateBorderColor": "backgroundDark",
+        "updateForeground": "textGrey"
+      },
+      "SearchField": {
+        "background": "backgroundLight",
+        "borderColor": "backgroundLight"
+      },
+      "SectionHeader": {
+        "background": "backgroundDark",
+        "foreground": "textGrey"
+      },
+      "Tab": {
+        "hoverBackground": "fadedPink",
+        "selectedForeground": "primaryPurple",
+        "selectedBackground": "fadedPink"
+      }
+    },
+    "Popup": {
+      "Advertiser": {
+        "background": "backgroundLight",
+        "borderColor": "backgroundLight",
+        "foreground": "primaryPurple"
+      },
+      "borderColor": "backgroundLight",
+      "inactiveBorderColor": "backgroundLight",
+      "innerBorderColor": "backgroundDark",
+      "Header": {
+        "activeBackground": "backgroundLight",
+        "inactiveBackground": "fadedPink"
+      },
+      "paintBorder": true,
+      "separatorForeground": "textGrey",
+      "separatorColor": "backgroundDark",
+      "Toolbar": {
+        "Floating.background": "fadedPink",
+        "background": "fadedPink",
+        "borderColor": "backgroundLight"
+      }
+    },
+    "PopupMenu": {
+      "background": "backgroundLight",
+      "border": "2,0,2,0",
+      "foreground": "textGrey",
+      "translucentBackground": "backgroundLight"
+    },
+    "PopupMenuSeparator.height": 10,
+    "PopupMenuSeparator.stripeIndent": 5,
+    "ProgressBar": {
+      "background": "backgroundLight",
+      "foreground": "primaryPurple",
+      "indeterminateEndColor": "primaryPurple",
+      "indeterminateStartColor": "primaryPurple",
+      "progressColor": "primaryPurple",
+      "selectionBackground": "fadedPink",
+      "trackColor": "fadedPink"
+    },
+    "PsiViewer": {
+      "referenceHighlightColor": "primaryPurple"
+    },
+    "RadioButton": {
+      "background": "backgroundLight",
+      "disabledText": "greyDark",
+      "foreground": "textGrey"
+    },
+    "RadioButtonMenuItem": {
+      "acceleratorForeground": "greyDark",
+      "acceleratorSelectionForeground": "greyDark",
+      "background": "backgroundLight",
+      "disabledBackground": "backgroundLight",
+      "disabledForeground": "greyDark",
+      "foreground": "textGrey",
+      "selectionBackground": "fadedPink",
+      "selectionForeground": "primaryPurple"
+    },
+    "ScrollBar": {
+      "background": "backgroundLight",
+      "hoverThumbBorderColor": "grey70%",
+      "hoverThumbColor": "grey70%",
+      "hoverTrackColor": "backgroundLight",
+      "Mac": {
+        "hoverThumbBorderColor": "grey70%",
+        "hoverThumbColor": "grey70%",
+        "hoverTrackColor": "backgroundLight",
+        "thumbBorderColor": "grey70%",
+        "thumbColor": "grey70%",
+        "trackColor": "backgroundLight",
+        "Transparent": {
+          "hoverThumbBorderColor": "grey70%",
+          "hoverThumbColor": "grey70%",
+          "hoverTrackColor": "backgroundLight",
+          "thumbBorderColor": "grey70%",
+          "thumbColor": "grey70%",
+          "trackColor": "backgroundLight"
+        }
+      },
+      "thumb": "grey70%",
+      "thumbBorderColor": "grey70%",
+      "thumbColor": "grey70%",
+      "trackColor": "backgroundLight",
+      "Transparent": {
+        "hoverThumbBorderColor": "grey70%",
+        "hoverThumbColor": "grey70%",
+        "hoverTrackColor": "backgroundLight",
+        "thumbBorderColor": "grey70%",
+        "thumbColor": "grey70%",
+        "trackColor": "backgroundLight"
+      }
+    },
+    "SearchEverywhere": {
+      "Advertiser": {
+        "background": "fadedPink",
+        "foreground": "greyDark"
+      },
+      "Header": {
+        "background": "backgroundLight"
+      },
+      "List": {
+        "separatorForeground": "greyDark",
+        "separatorColor": "grey"
+      },
+      "SearchField": {
+        "background": "backgroundLight",
+        "borderColor": "backgroundLight",
+        "infoForeground": "greyDark"
+      },
+      "Tab": {
+        "active.foreground": "primaryPurple",
+        "selectedForeground": "primaryPurple",
+        "selectedBackground": "fadedPink"
+      }
+    },
+    "SearchMatch": {
+      "endBackground": "lilac",
+      "startBackground": "lilac"
+    },
+    "SearchField.errorBackground": "fadedPink",
+    "Separator": {
+      "background": "backgroundDark",
+      "foreground": "backgroundDark",
+      "separatorColor": "backgroundDark"
+    },
+    "SidePanel": {
+      "background": "backgroundLight"
+    },
+    "Slider": {
+      "background": "backgroundLight",
+      "buttonBorderColor": "primaryPurple",
+      "buttonColor": "primaryPurple",
+      "foreground": "textGrey",
+      "majorTickLength": 6,
+      "tickColor": "backgroundDark",
+      "trackColor": "fadedPink",
+      "trackWidth": 7,
+      "thumb": "primaryPurple"
+    },
+    "SpeedSearch": {
+      "background": "fadedPink",
+      "borderColor": "backgroundLight",
+      "foreground": "textGrey",
+      "errorForeground": "textGrey"
+    },
+    "Spinner": {
+      "background": "backgroundLight",
+      "border": "3,3,3,3",
+      "foreground": "textGrey",
+      "selectionForeground": "primaryPurple"
+    },
+    "SplitPane": {
+      "background": "backgroundLight",
+      "highlight": "backgroundLight"
+    },
+    "SplitPaneDivider.draggingColor": "backgroundDark",
+    "StatusBar": {
+      "borderColor": "backgroundLight"
+    },
+    "TabbedPane": {
+      "background": "backgroundLight",
+      "contentAreaColor": "fadedPink",
+      "contentBorderInsets": "3,1,1,1",
+      "darkShadow": "grey",
+      "disabledForeground": "greyDark",
+      "disabledUnderlineColor": "greyDark",
+      "focus": "fadedPink",
+      "focusColor": "fadedPink",
+      "fontSizeOffset": 0,
+      "foreground": "textGrey",
+      "highlight": "grey",
+      "hoverColor": "fadedPink",
+      "labelShift": 0,
+      "selectedForeground": "primaryPurple",
+      "selectedLabelShift": 0,
+      "selectedTabPadInsets": "0,0,0,0",
+      "tabsOverlapBorder": true,
+      "tabHeight": 32,
+      "tabInsets": "5,10,5,10",
+      "tabSelectionHeight": 2,
+      "underlineColor": "primaryPurple"
+    },
+    "TabbedPane.mt.tab.background": "backgroundLight",
+    "Table": {
+      "background": "backgroundLight",
+      "cellNoFocusBorder": "10,5,10,5",
+      "focusCellHighlightBorder": "10,5,10,5",
+      "dropLineColor": "primaryPurple",
+      "dropLineShortColor": "primaryPurple",
+      "focusCellBackground": "fadedPink",
+      "focusCellForeground": "primaryPurple",
+      "foreground": "textGrey",
+      "gridColor": "backgroundLight",
+      "highlightOuter": "fadedPink",
+      "lightSelectionForeground": "primaryPurple",
+      "lightSelectionInactiveForeground": "greyDark",
+      "lightSelectionInactiveBackground": "backgroundDark",
+      "selectionBackground": "fadedPink",
+      "selectionForeground": "primaryPurple",
+      "selectionInactiveBackground": "fadedPink",
+      "selectionInactiveForeground": "primaryPurple",
+      "sortIconColor": "textGrey",
+      "stripeColor": "fadedPink"
+    },
+    "TableHeader": {
+      "background": "backgroundLight",
+      "borderColor": "backgroundLight",
+      "bottomSeparatorColor": "backgroundDark",
+      "cellBorder": "4,0,4,0",
+      "disabledForeground": "greyDark",
+      "foreground": "textGrey",
+      "focusCellBackground": "fadedPink",
+      "focusCellForeground": "primaryPurple",
+      "height": 25,
+      "separatorColor": "backgroundDark"
+    },
+    "text": "greyDark",
+    "textInactiveText": "greyDark",
+    "textText": "greyDark",
+    "TextArea": {
+      "background": "backgroundLight",
+      "caretForeground": "primaryPurple",
+      "foreground": "textGrey",
+      "inactiveForeground": "greyDark",
+      "selectionBackground": "fadedPink",
+      "selectionForeground": "primaryPurple"
+    },
+    "TextField": {
+      "background": "backgroundLight",
+      "caretForeground": "primaryPurple",
+      "foreground": "textGrey",
+      "inactiveForeground": "greyDark",
+      "selectionBackground": "fadedPink",
+      "selectionForeground": "primaryPurple"
+    },
+    "TextPane": {
+      "background": "backgroundLight",
+      "caretForeground": "primaryPurple",
+      "foreground": "textGrey",
+      "inactiveForeground": "greyDark",
+      "selectionBackground": "fadedPink",
+      "selectionForeground": "primaryPurple"
+    },
+    "TitlePane": {
+      "background": "fadedPink",
+      "Button.hoverBackground": "fadedPink",
+      "inactiveBackground": "backgroundLight",
+      "infoForeground": "greyDark",
+      "inactiveInfoForeground": "greyDark"
+    },
+    "TitledBorder.titleColor": "textGrey",
+    "ToggleButton": {
+      "borderColor": "backgroundLight",
+      "buttonColor": "textGrey",
+      "disabledText": "greyDark",
+      "foreground": "textGrey",
+      "offForeground": "backgroundLight",
+      "offBackground": "backgroundLight",
+      "onBackground": "fadedPink",
+      "onForeground": "primaryPurple"
+    },
+    "ToolBar": {
+      "background": "backgroundLight",
+      "borderHandleColor": "greyDark",
+      "floatingForeground": "greyDark",
+      "foreground": "textGrey"
+    },
+    "ToolTip": {
+      "Actions.background": "backgroundLight",
+      "Actions.infoForeground": "greyDark",
+      "background": "backgroundLight",
+      "borderColor": "backgroundLight",
+      "foreground": "textGrey",
+      "infoForeground": "greyDark",
+      "separatorColor": "grey",
+      "shortcutForeground": "greyDark"
+    },
+    "ToolWindow": {
+      "Button": {
+        "hoverBackground": "fadedPink",
+        "selectedForeground": "primaryPurple",
+        "selectedBackground": "fadedPink"
+      },
+      "Header": {
+        "background": "backgroundLight",
+        "borderColor": "backgroundLight",
+        "inactiveBackground": "backgroundLight"
+      },
+      "HeaderCloseButton": {
+        "background": "backgroundLight"
+      },
+      "HeaderTab": {
+        "hoverBackground": "fadedPink",
+        "hoverInactiveBackground": "backgroundDark",
+        "inactiveUnderlineColor": "primaryPurple",
+        "selectedBackground": "fadedPink",
+        "selectedInactiveBackground": "fadedPink",
+        "underlineColor": "primaryPurple",
+        "underlinedTabBackground": "fadedPink",
+        "underlinedTabInactiveBackground": "backgroundDark"
+      }
+    },
+    "Tree": {
+      "background": "backgroundDark",
+      "foreground": "textBlack",
+      "hash": "grey",
+      "modifiedItemForeground": "primaryPurple",
+      "selectionBackground": "fadedPinkDark",
+      "selectionForeground": "primaryPurple",
+      "selectionInactiveForeground": "primaryPurple",
+      "selectionInactiveBackground": "fadedPinkDark",
+      "textBackground": "backgroundLight"
+    },
+    "UiDesigner": {
+      "Activity.borderColor": "grey",
+      "ColorPicker.background": "backgroundLight",
+      "ColorPicker.foreground": "textGrey",
+      "Component.borderColor": "grey",
+      "Component.background": "backgroundLight",
+      "Component.foreground": "textGrey",
+      "Connector.borderColor": "grey",
+      "Connector.hoverBorderColor": "fadedPink",
+      "Canvas.background": "fadedPink",
+      "highStroke.foreground": "textGrey",
+      "Label.foreground": "greyDark",
+      "List.selectionBackground": "fadedPinkDark",
+      "Panel.borderColor": "grey",
+      "Panel.background": "backgroundLight",
+      "percent.foreground": "textGrey",
+      "Placeholder.background": "backgroundLight",
+      "Placeholder.borderColor": "grey",
+      "Placeholder.foreground": "textGrey",
+      "Placeholder.selectedForeground": "primaryPurple",
+      "Preview.background": "backgroundLight",
+      "stroke.acceleratorForeground": "greyDark"
+    },
+    "ValidationTooltip": {
+      "errorBackground": "fadedPink",
+      "errorBorderColor": "fadedPink",
+      "warningBackground": "fadedPink",
+      "warningBorderColor": "fadedPink"
+    },
+    "VersionControl": {
+      "FileHistory.Commit": {
+        "selectedBranchBackground": "backgroundLight"
+      },
+      "GitCommits": {
+        "graphColor": "fadedPink"
+      },
+      "GitLog": {
+        "localBranchIconColor": "primaryPurple",
+        "otherIconColor": "greyDark",
+        "remoteBranchIconColor": "textGrey",
+        "tagIconColor": "greyDark"
+      },
+      "HgLog": {
+        "branchIconColor": "primaryPurple",
+        "bookmarkIconColor": "primaryPurple",
+        "closedBranchIconColor": "greyDark",
+        "localTagIconColor": "greyDark",
+        "mqTagIconColor": "greyDark",
+        "tagIconColor": "greyDark",
+        "tipIconColor": "greyDark"
+      },
+      "Log": {
+        "Commit.unmatchedForeground": "greyDark",
+        "Commit.currentBranchBackground": "backgroundDark"
+      },
+      "RefLabel": {
+        "foreground": "primaryPurple",
+        "backgroundBase": "fadedPink"
+      }
+    },
+    "Viewport": {
+      "background": "backgroundLight",
+      "foreground": "textGrey"
+    },
+    "WelcomeScreen": {
+      "background": "backgroundLight",
+      "borderColor": "backgroundLight",
+      "captionBackground": "fadedPink",
+      "captionForeground": "textGrey",
+      "footerBackground": "fadedPink",
+      "footerForeground": "textGrey",
+      "headerBackground": "backgroundLight",
+      "headerForeground": "textGrey",
+      "separatorColor": "grey",
+      "Projects": {
+        "background": "backgroundDark",
+        "selectionBackground": "fadedPink",
+        "selectionInactiveBackground": "backgroundDark"
+      }
+    },
+    "window": "backgroundLight",
+    "windowBorder": "backgroundLight",
+    "windowText": "greyDark",
+    "Window.border": "backgroundLight"
+  },
+  "icons": {
+    "ColorPalette": {
+      "#43494A": "fadedPink",
+      "#6B6B6B": "greyDark",
+      "#A7A7A7": "backgroundLight",
+      "#3D6185": "primaryPurple",
+      "#466D94": "primaryPurple",
+      "#3C3F41": "backgroundLight",
+      "#545556": "greyDark",
+      "#606060": "greyDark",
+      "#9AA7B0": "textGrey",
+      "#675133": "primaryPurple",
+      "Actions.Blue": "#82aaff",
+      "Actions.Green": "#50ad39",
+      "Actions.Grey": "greyDark",
+      "Actions.GreyInline": "greyDark",
+      "Actions.GreyInline.Dark": "textGrey",
+      "Actions.Red": "fadedRed",
+      "Actions.Yellow": "yellow",
+      "Checkbox.Background.Default": "fadedPink",
+      "Checkbox.Background.Default.Dark": "fadedPink",
+      "Checkbox.Background.Disabled": "fadedYellow",
+      "Checkbox.Background.Disabled.Dark": "fadedYellow",
+      "Checkbox.Border.Default": "grey",
+      "Checkbox.Border.Default.Dark": "grey",
+      "Checkbox.Border.Disabled": "greyDark",
+      "Checkbox.Border.Disabled.Dark": "greyDark",
+      "Checkbox.Focus.Thin.Default": "primaryPurple",
+      "Checkbox.Focus.Thin.Default.Dark": "primaryPurple",
+      "Checkbox.Focus.Wide": "primaryPurple",
+      "Checkbox.Focus.Wide.Dark": "primaryPurple",
+      "Checkbox.Foreground.Disabled": "greyDark",
+      "Checkbox.Foreground.Disabled.Dark": "greyDark",
+      "Checkbox.Background.Selected": "primaryPurple",
+      "Checkbox.Background.Selected.Dark": "backgroundLight",
+      "Checkbox.Border.Selected": "primaryPurple",
+      "Checkbox.Border.Selected.Dark": "primaryPurple",
+      "Checkbox.Foreground.Selected": "primaryPurple",
+      "Checkbox.Foreground.Selected.Dark": "primaryPurple",
+      "Checkbox.Focus.Thin.Selected": "textGrey",
+      "Checkbox.Focus.Thin.Selected.Dark": "textGrey",
+      "Objects.Grey": "greyDark",
+      "Objects.Blue": "#82aaff",
+      "Objects.RedStatus": "fadedRed",
+      "Objects.Red": "fadedRed",
+      "Objects.Pink": "#c792ea",
+      "Objects.Yellow": "yellow",
+      "Objects.Green": "#50ad39",
+      "Objects.Purple": "#790e8b",
+      "Objects.BlackText": "textGrey",
+      "Objects.YellowDark": "#f78c6c",
+      "Objects.GreenAndroid": "#50ad39"
+    }
+  }
+}
