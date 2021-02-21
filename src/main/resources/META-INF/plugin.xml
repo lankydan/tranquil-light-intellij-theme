@@ -1,6 +1,6 @@
 <idea-plugin>
-    <id>dev.lankydan.mysteryintellijtheme</id>
-    <name>mystery</name>
+    <id>dev.lankydan.tranquil</id>
+    <name>tranquil-light</name>
     <vendor>lankydan</vendor>
 
     <!-- Product and plugin compatibility requirements -->
@@ -8,6 +8,6 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <themeProvider id="e7a2a42c-3744-11eb-adc1-0242ac120002" path="/themes/mystery-theme.json"/>
+        <themeProvider id="179dcc8a-589a-4893-a4b3-5562e0650764" path="/themes/tranquil-light-theme.json"/>
     </extensions>
 </idea-plugin>

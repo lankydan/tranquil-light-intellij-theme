@@ -1,6 +1,6 @@
-package com.github.lankydan.mysteryintellijtheme.services
+package com.github.lankydan.tranquil.services
 
-import com.github.lankydan.mysteryintellijtheme.MyBundle
+import com.github.lankydan.tranquil.MyBundle
 import com.intellij.openapi.project.Project
 
 class MyProjectService(project: Project) {

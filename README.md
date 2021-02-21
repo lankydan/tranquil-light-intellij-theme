@@ -1,25 +1,23 @@
-# mystery-intellij-theme
+# tranquil-light-intellij-theme
 
-![Build](https://github.com/lankydan/mystery-intellij-theme/workflows/Build/badge.svg)
-[![Version](https://img.shields.io/jetbrains/plugin/v/15515-mystery.svg)](https://plugins.jetbrains.com/plugin/15515-mystery)
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/15515-mystery.svg)](https://plugins.jetbrains.com/plugin/15515-mystery)
+![Build](https://github.com/lankydan/tranquil-light-intellij-theme/workflows/Build/badge.svg)
+[![Version](https://img.shields.io/jetbrains/plugin/v/15515-tranquil-light.svg)](https://plugins.jetbrains.com/plugin/15515-tranquil-light)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/15515-tranquil-light.svg)](https://plugins.jetbrains.com/plugin/15515-tranquil-light)
 
 <!-- Plugin description -->
-This is an alteration on the Material mystery theme, that brightens up some of the colours to increase readability.
-
-The original theme that this was based on can be found [here](https://plugins.jetbrains.com/plugin/12124-material-theme-ui-lite).
+This theme is dimmer and easier on the eyes than the default Intellij themes as well as other light themes that I have come across. The inspiration for this theme codes from the Quiet Light theme bundled in Visual studio code, you might notice that the background colours are the same.
 <!-- Plugin description end -->
 
 ## Installation
 
 - Using IDE built-in plugin system:
   
-  <kbd>Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "mystery-intellij-theme"</kbd> >
+  <kbd>Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "Tranquial Light theme"</kbd> >
   <kbd>Install Plugin</kbd>
   
 - Manually:
 
-  Download the [latest release](https://github.com/lankydan/mystery-intellij-theme/releases/latest) and install it manually using
+  Download the [latest release](https://github.com/lankydan/tranquil-light-intellij-theme/releases/latest) and install it manually using
   <kbd>Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>⚙️</kbd> > <kbd>Install plugin from disk...</kbd>
 
 

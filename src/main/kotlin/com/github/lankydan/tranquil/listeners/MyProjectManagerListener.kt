@@ -1,6 +1,6 @@
-package com.github.lankydan.mysteryintellijtheme.listeners
+package com.github.lankydan.tranquil.listeners
 
-import com.github.lankydan.mysteryintellijtheme.services.MyProjectService
+import com.github.lankydan.tranquil.services.MyProjectService
 import com.intellij.openapi.components.service
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.project.ProjectManagerListener
