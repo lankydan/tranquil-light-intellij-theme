@@ -132,7 +132,7 @@ jobs:
 
       # Upload plugin artifact to make it available in the next jobs
       - name: Upload artifact
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v4
         with:
           name: plugin-artifact
           path: ./build/distributions/${{ needs.build.outputs.artifact }}
@@ -189,7 +189,7 @@ jobs:
 
       # Run IntelliJ Plugin Verifier action using GitHub Action
       - name: Verify Plugin
-        run: ./gradlew runPluginVerifier -Pplugin.verifier.home.dir=${{ steps.properties.outputs.pluginVerifierHomeDir }}
+        run: ./gradlew verifyPlugin -Pplugin.verifier.home.dir=${{ steps.properties.outputs.pluginVerifierHomeDir }}
 
   # Prepare a draft release for GitHub Releases page for the manual verification
   # If accepted and published, release workflow would be triggered
@@ -229,7 +229,7 @@ jobs:
 
       # Download plugin artifact provided by the previous job
       - name: Download Artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: plugin-artifact
 

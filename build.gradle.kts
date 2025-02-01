@@ -1,18 +1,20 @@
 import io.gitlab.arturbosch.detekt.Detekt
 import org.jetbrains.changelog.markdownToHTML
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+import org.jetbrains.kotlin.gradle.tasks.KotlinJvmCompile
 
 plugins {
     // Java support
     id("java")
     // Kotlin support
-    id("org.jetbrains.kotlin.jvm") version "1.9.0"
+    kotlin("jvm") version "2.1.0"
+    kotlin("plugin.serialization") version "2.1.0"
     // gradle-intellij-plugin - read more: https://github.com/JetBrains/gradle-intellij-plugin
-    id("org.jetbrains.intellij") version "1.16.1"
+    id("org.jetbrains.intellij.platform") version "2.2.0"
     // gradle-changelog-plugin - read more: https://github.com/JetBrains/gradle-changelog-plugin
     id("org.jetbrains.changelog") version "1.3.1"
     // detekt linter - read more: https://detekt.github.io/detekt/gradle.html
-    id("io.gitlab.arturbosch.detekt") version "1.21.0"
+    id("io.gitlab.arturbosch.detekt").version("1.23.7")
     // ktlint linter - read more: https://github.com/JLLeitschuh/ktlint-gradle
     id("org.jlleitschuh.gradle.ktlint") version "10.3.0"
     // dependency checker
@@ -40,28 +42,66 @@ version = pluginVersion
 // Configure project's dependencies
 repositories {
     mavenCentral()
+    intellijPlatform {
+        defaultRepositories()
+    }
 }
 dependencies {
     detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.14.2")
+    intellijPlatform {
+        create(platformType, platformVersion)
+        plugins(providers.gradleProperty("platformPlugins").map { it.split(',') })
+    }
 }
 
 // Configure gradle-intellij-plugin plugin.
 // Read more: https://github.com/JetBrains/gradle-intellij-plugin
-intellij {
-    pluginName.set(pluginName_)
-    version.set(platformVersion)
-    type.set(platformType)
-    downloadSources.set(platformDownloadSources.toBoolean())
-    updateSinceUntilBuild.set(true)
+intellijPlatform {
+    pluginConfiguration {
+        name = pluginName_
+        version = pluginVersion
+        ideaVersion {
+            sinceBuild = pluginSinceBuild
+            untilBuild = pluginUntilBuild
+        }
+        // Extract the <!-- Plugin description --> section from README.md and provide for the plugin's manifest
+        description = provider {
+            File("./README.md").readText().lines().run {
+                val start = "<!-- Plugin description -->"
+                val end = "<!-- Plugin description end -->"
 
-    // Plugin Dependencies. Uses `platformPlugins` property from the gradle.properties file.
-    plugins.set(platformPlugins.split(',').map(String::trim).filter(String::isNotEmpty))
+                if (!containsAll(listOf(start, end))) {
+                    throw GradleException("Plugin description section not found in README.md:\n$start ... $end")
+                }
+                subList(indexOf(start) + 1, indexOf(end))
+            }.joinToString("\n").run { markdownToHTML(this) }
+        }
+        // Get the latest available change notes from the changelog file
+        changeNotes = provider { changelog.getLatest().toHTML() }
+    }
+
+    publishing {
+        token = System.getenv("PUBLISH_TOKEN")
+        // pluginVersion is based on the SemVer (https://semver.org) and supports pre-release labels, like 2.1.7-alpha.3
+        // Specify pre-release label to publish the plugin in a custom Release Channel automatically. Read more:
+        // https://jetbrains.org/intellij/sdk/docs/tutorials/build_system/deployment.html#specifying-a-release-channel
+        channels = listOf(pluginVersion.split('-').getOrElse(1) { "default" }.split('.').first())
+    }
+
+    pluginVerification {
+        ides {
+            ides(pluginVerifierIdeVersions.split(","))
+        }
+        freeArgs = listOf("-mute", "TemplateWordInPluginName")
+    }
+
+//    downloadSources.set(platformDownloadSources.toBoolean())
 }
 
 // Configure detekt plugin.
 // Read more: https://detekt.github.io/detekt/kotlindsl.html
 detekt {
-    config = files("./detekt-config.yml")
+    config.setFrom("./detekt-config.yml")
     buildUponDefaultConfig = true
 }
 
@@ -73,56 +113,20 @@ tasks.withType<Detekt>().configureEach {
     }
 }
 
+tasks.named<KotlinJvmCompile>("compileKotlin") {
+    compilerOptions {
+        jvmTarget.set(JvmTarget.JVM_17)
+    }
+}
+
 tasks {
     // Set the compatibility versions to 17
     withType<JavaCompile> {
         sourceCompatibility = "17"
         targetCompatibility = "17"
     }
-    listOf("compileKotlin", "compileTestKotlin").forEach {
-        getByName<KotlinCompile>(it) {
-            kotlinOptions.jvmTarget = "17"
-        }
-    }
 
     withType<Detekt> {
         jvmTarget = "17"
-    }
-
-    patchPluginXml {
-        version.set(pluginVersion)
-        sinceBuild.set(pluginSinceBuild)
-        untilBuild.set(pluginUntilBuild)
-
-        // Extract the <!-- Plugin description --> section from README.md and provide for the plugin's manifest
-        pluginDescription.set(
-            provider {
-                File("./README.md").readText().lines().run {
-                    val start = "<!-- Plugin description -->"
-                    val end = "<!-- Plugin description end -->"
-
-                    if (!containsAll(listOf(start, end))) {
-                        throw GradleException("Plugin description section not found in README.md:\n$start ... $end")
-                    }
-                    subList(indexOf(start) + 1, indexOf(end))
-                }.joinToString("\n").run { markdownToHTML(this) }
-            }
-        )
-
-        // Get the latest available change notes from the changelog file
-        changeNotes.set(provider { changelog.getLatest().toHTML() })
-    }
-
-    runPluginVerifier {
-        ideVersions.addAll(pluginVerifierIdeVersions.split(","))
-    }
-
-    publishPlugin {
-        dependsOn("patchChangelog")
-        token.set(System.getenv("PUBLISH_TOKEN"))
-        // pluginVersion is based on the SemVer (https://semver.org) and supports pre-release labels, like 2.1.7-alpha.3
-        // Specify pre-release label to publish the plugin in a custom Release Channel automatically. Read more:
-        // https://jetbrains.org/intellij/sdk/docs/tutorials/build_system/deployment.html#specifying-a-release-channel
-        channels.add(pluginVersion.split('-').getOrElse(1) { "default" }.split('.').first())
     }
 }
